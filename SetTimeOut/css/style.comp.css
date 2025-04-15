@@ -1,0 +1,48 @@
+root {
+  --color-one: #ff0000;
+  --color-two: #00ff00;
+  --color-three: #0000ff;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://cdn.pixabay.com/photo/2015/09/18/19/03/abstract-557586_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container__p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.container__buttons {
+  font-size: 3rem;
+  padding: 0.5rem 1.5rem;
+}
+
+/*# sourceMappingURL=style.comp.css.map */
