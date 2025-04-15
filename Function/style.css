@@ -1,0 +1,39 @@
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: 62.5%;
+  height: 100%;
+
+  & body {
+    background-color: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & div {
+    display: flex;
+    flex-flow: column nowrap;
+    & h1 {
+      color: white;
+      font-size: 3rem;
+    }
+    & p {
+      height: 2rem;
+      color: antiquewhite;
+      font-size: 1.4rem;
+    }
+    & #p1,
+    #p2 {
+      transition: 0.5s ease-in;
+      font-weight: 700;
+      text-shadow: 0rem 0rem 1rem white;
+    }
+
+    & .p {
+      display: none;
+      color: white;
+    }
+  }
+}
