@@ -1,0 +1,70 @@
+:root {
+  --color1: darken(red, 10%);
+  --color2: darken(blue, 10%);
+  --color3: darken(green, 10%);
+  --color4: darken(yellow, 10%);
+}
+@mixin display(
+  $display: flex,
+  $flow: column,
+  $align: center,
+  $justify: center,
+  $gap: 1rem
+) {
+  display: $display;
+  flex-flow: $flow;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Orbitron", sans-serif;
+}
+body {
+  @include display();
+  height: 100vh;
+}
+
+.container {
+  @include display();
+  color: darken(gray, 30%);
+
+  &__h1 {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+
+  &__div {
+    @include display();
+    border: 5px solid darken(gray, 30%);
+    width: max-content;
+    border-radius: 1rem;
+    width: 110%;
+    padding: 2rem 2rem;
+
+    &__h2 {
+      @include display();
+      font-size: 4.5rem;
+      font-weight: 700;
+      width: 110%;
+    }
+    &__buttons {
+      @include display($flow: row);
+
+      & button {
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 0.01rem 1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
