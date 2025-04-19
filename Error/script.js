@@ -1,9 +1,9 @@
 /*
-Error -> An objct that is created to represent a problem tha occurs
-        often with user input or establishing a connection to a server.
+Error     -> An objct that is created to represent a problem tha occurs
+          often with user input or establishing a connection to a server.
 
-try{} -> Encloses code that might potentially cause a error
-catch{} -> Catch and handle any thrown Errors from try{}
+try{}     -> Encloses code that might potentially cause a error
+catch{}   -> Catch and handle any thrown Errors from try{}
 finally{} -> (Optional) Always executes. Used mostly for clean up 
               ex.: close files, close connections, release resources.
 */
