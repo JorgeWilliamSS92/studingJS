@@ -1,0 +1,97 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
+  height: 100vh;
+}
+
+.calculator {
+  width: -moz-min-content;
+  width: min-content;
+  background-color: #1f1f1f;
+  border-radius: 1rem;
+}
+.calculator__input {
+  background-color: #1f1f1f;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+.calculator__input--result {
+  font-size: 5rem;
+  color: #f0f0f0;
+  margin: 0rem;
+  padding: 1rem 1rem;
+}
+.calculator__input--operation {
+  font-size: 1.4rem;
+  color: rgb(163.5, 163.5, 163.5);
+  margin: 0;
+  padding: 1rem 1rem;
+  font-style: italic;
+}
+.calculator__numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #000;
+  padding: 1.5rem 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+.calculator__numbers__div1, .calculator__numbers__div2, .calculator__numbers__div3, .calculator__numbers__div4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.calculator__numbers__div5 {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.calculator__numbers__div5--iqual {
+  grid-column: 3;
+}
+.calculator__numbers__div5--clear {
+  grid-column: 4;
+}
+.calculator__numbers button {
+  font-size: 3rem;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.calculator__numbers button:hover {
+  background-color: #f0f0f0;
+  background-color: rgb(56.5, 56.5, 56.5);
+}
+.calculator .sign {
+  background-color: #e9940c;
+}
+.calculator .sign:hover {
+  background-color: #f0f0f0;
+  background-color: rgb(208.7489795918, 132.5959183673, 10.7510204082);
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Njc3MvbWFpbi5zY3NzIiwic3R5bGUuY29tcC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBb0JBO0VBQ0UsZ0JBQUE7RUFDQSxzQkFBQTtFQUNBLGtDQUFBO0VBQ0EsU0FBQTtFQUNBLFVBQUE7QUNuQkY7O0FEcUJBO0VBZEUsYUFOVTtFQU9WLG1CQU5PO0VBT1AsdUJBTmtCO0VBT2xCLG1CQU5jO0VBT2QsU0FXdUI7RUFDdkIsYUFBQTtBQ2RGOztBRGlCQTtFQUNFLHVCQUFBO0VBQUEsa0JBQUE7RUFDQSx5QkEvQks7RUFnQ0wsbUJBQUE7QUNkRjtBRGdCRTtFQUNFLHlCQW5DRztFQW9DSCw4QkFBQTtFQUNBLCtCQUFBO0FDZEo7QURnQkk7RUFDRSxlQUFBO0VBQ0EsY0ExQ0U7RUEyQ0YsWUFBQTtFQUNBLGtCQUFBO0FDZE47QURnQkk7RUFDRSxpQkFBQTtFQUNBLCtCQUFBO0VBQ0EsU0FBQTtFQUNBLGtCQUFBO0VBQ0Esa0JBQUE7QUNkTjtBRGtCRTtFQTVDQSxhQU5VO0VBT1Ysc0JBNEMwQjtFQTNDMUIsdUJBTmtCO0VBT2xCLG1CQU5jO0VBT2QsU0FOTTtFQWdESixzQkExREk7RUEyREosc0JBQUE7RUFDQSxpQ0FBQTtFQUNBLGtDQUFBO0FDWko7QURjSTtFQW5ERixhQU5VO0VBT1YsbUJBTk87RUFPUCx1QkFOa0I7RUFPbEIsbUJBTmM7RUFPZCxTQU5NO0FDOENSO0FEY0k7RUExREYsYUEyRCtCO0VBMUQvQixzQkEwRDRDO0VBekQ1Qyx1QkFOa0I7RUFPbEIsbUJBTmM7RUFPZCxTQU5NO0VBOERGLHFDQUFBO0FDUk47QURVTTtFQUNFLGNBQUE7QUNSUjtBRFVNO0VBQ0UsY0FBQTtBQ1JSO0FEWUk7RUFDRSxlQUFBO0VBQ0EsWUFBQTtFQUNBLFdBQUE7RUFDQSxrQkFBQTtFQUNBLHlCQXJGQztFQXNGRCxjQXZGRTtFQXdGRixZQUFBO0VBQ0EsZUFBQTtFQUNBLHNDQUFBO0FDVk47QURZSTtFQUNFLHlCQTdGRTtFQThGRix1Q0FBQTtBQ1ZOO0FEYUU7RUFDRSx5QkFoR0s7QUNxRlQ7QURhRTtFQUNFLHlCQXJHSTtFQXNHSixvRUFBQTtBQ1hKIiwiZmlsZSI6InN0eWxlLnByZWZpeC5jc3MifQ== */

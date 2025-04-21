@@ -1,0 +1,107 @@
+//colors
+$black: #000;
+$white: #f0f0f0;
+$gray: #1f1f1f;
+$yellow: #e9940c;
+
+@mixin display(
+  $display: flex,
+  $flex: row,
+  $justify-content: center,
+  $align-items: center,
+  $gap: 1rem
+) {
+  display: $display;
+  flex-direction: $flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  @include display($gap: 0rem);
+  height: 100vh;
+}
+
+.calculator {
+  width: min-content;
+  background-color: $gray;
+  border-radius: 1rem;
+
+  &__input {
+    background-color: $gray;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+
+    &--result {
+      font-size: 5rem;
+      color: $white;
+      margin: 0rem;
+      padding: 1rem 1rem;
+    }
+    &--operation {
+      font-size: 1.4rem;
+      color: darken($white, 30%);
+      margin: 0;
+      padding: 1rem 1rem;
+      font-style: italic;
+    }
+  }
+
+  &__numbers {
+    @include display($flex: column);
+    background-color: $black;
+    padding: 1.5rem 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+
+    &__div1,
+    &__div2,
+    &__div3,
+    &__div4 {
+      @include display();
+    }
+
+    &__div5 {
+      @include display($display: grid, $flex: column);
+      grid-template-columns: repeat(4, 1fr);
+
+      &--iqual {
+        grid-column: 3;
+      }
+      &--clear {
+        grid-column: 4;
+      }
+    }
+
+    & button {
+      font-size: 3rem;
+      height: 6rem;
+      width: 6rem;
+      border-radius: 50%;
+      background-color: $gray;
+      color: $white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    & button:hover {
+      background-color: $white;
+      background-color: lighten($gray, 10%);
+    }
+  }
+  & .sign {
+    background-color: $yellow;
+  }
+  & .sign:hover {
+    background-color: $white;
+    background-color: darken($yellow, 5%);
+  }
+}
