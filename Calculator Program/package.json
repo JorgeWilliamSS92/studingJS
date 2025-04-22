@@ -2,7 +2,7 @@
   "name": "calculator-program",
   "version": "1.0.0",
   "description": "Calculator App",
-  "main": "index.html",
+  "main": "./js/script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:sass": "sass scss/main.scss css/style.css -w",
@@ -20,6 +20,7 @@
   ],
   "author": "Jorge William",
   "license": "ISC",
+  "type": "module",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "npm-run-all": "^4.1.5",

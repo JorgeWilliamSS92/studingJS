@@ -9,42 +9,129 @@
   <body>
     <div class="calculator">
       <div class="calculator__input">
-        <h1 class="calculator__input--result">0</h1>
+        <h1 class="calculator__input--result" id="display"></h1>
         <h2 class="calculator__input--operation">
-          History: <span id="span"></span>
+          History: <span id="history"></span>
         </h2>
       </div>
       <div class="calculator__numbers">
         <div class="calculator__numbers__div1">
-          <button class="calculator__numbers__div1--seven">7</button>
-          <button class="calculator__numbers__div1--eight">8</button>
-          <button class="calculator__numbers__div1--nine">9</button>
-          <button class="calculator__numbers__div1--plus sign">+</button>
+          <button
+            onclick="selected('7')"
+            class="calculator__numbers__div1--seven"
+          >
+            7
+          </button>
+          <button
+            class="calculator__numbers__div1--eight"
+            onclick="selected('8')"
+          >
+            8
+          </button>
+          <button
+            class="calculator__numbers__div1--nine"
+            onclick="selected('9')"
+          >
+            9
+          </button>
+          <button
+            class="calculator__numbers__div1--plus sign"
+            onclick="selected('+')"
+          >
+            +
+          </button>
         </div>
         <div class="calculator__numbers__div2">
-          <button class="calculator__numbers__div2--four">4</button>
-          <button class="calculator__numbers__div2--five">5</button>
-          <button class="calculator__numbers__div2--six">6</button>
-          <button class="calculator__numbers__div2--sub sign">-</button>
+          <button
+            class="calculator__numbers__div2--four"
+            onclick="selected('4')"
+          >
+            4
+          </button>
+          <button
+            class="calculator__numbers__div2--five"
+            onclick="selected('5')"
+          >
+            5
+          </button>
+          <button
+            class="calculator__numbers__div2--six"
+            onclick="selected('6')"
+          >
+            6
+          </button>
+          <button
+            class="calculator__numbers__div2--sub sign"
+            onclick="selected('-')"
+          >
+            -
+          </button>
         </div>
         <div class="calculator__numbers__div3">
-          <button class="calculator__numbers__div3--one">1</button>
-          <button class="calculator__numbers__div3--two">2</button>
-          <button class="calculator__numbers__div3--three">3</button>
-          <button class="calculator__numbers__div3--mult sign">*</button>
+          <button
+            class="calculator__numbers__div3--one"
+            onclick="selected('1')"
+          >
+            1
+          </button>
+          <button
+            class="calculator__numbers__div3--two"
+            onclick="selected('2')"
+          >
+            2
+          </button>
+          <button
+            class="calculator__numbers__div3--three"
+            onclick="selected('3')"
+          >
+            3
+          </button>
+          <button
+            class="calculator__numbers__div3--mult sign"
+            onclick="selected('*')"
+          >
+            *
+          </button>
         </div>
         <div class="calculator__numbers__div4">
-          <button class="calculator__numbers__div4--praq">()</button>
-          <button class="calculator__numbers__div4--zero">0</button>
-          <button class="calculator__numbers__div4--dot">.</button>
-          <button class="calculator__numbers__div4--divide sign">/</button>
+          <button
+            class="calculator__numbers__div4--praq"
+            onclick="selected('')"
+          >
+            ()
+          </button>
+          <button
+            class="calculator__numbers__div4--zero"
+            onclick="selected('0')"
+          >
+            0
+          </button>
+          <button
+            class="calculator__numbers__div4--dot"
+            onclick="selected('.')"
+          >
+            .
+          </button>
+          <button
+            class="calculator__numbers__div4--divide sign"
+            onclick="selected('')"
+          >
+            /
+          </button>
         </div>
         <div class="calculator__numbers__div5">
-          <button class="calculator__numbers__div5--iqual">=</button>
-          <button class="calculator__numbers__div5--clear sign">c</button>
+          <button class="calculator__numbers__div5--iqual" onclick="result()">
+            =
+          </button>
+          <button
+            class="calculator__numbers__div5--clear sign"
+            onclick="clearContent()"
+          >
+            c
+          </button>
         </div>
       </div>
     </div>
-    <script type="module" src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

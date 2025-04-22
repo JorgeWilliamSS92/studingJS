@@ -24,27 +24,32 @@ html {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-}
-body {
   @include display($gap: 0rem);
   height: 100vh;
+}
+body {
+  background-color: lighten($black, 92%);
 }
 
 .calculator {
   width: min-content;
   background-color: $gray;
   border-radius: 1rem;
+  max-width: 30rem;
 
   &__input {
     background-color: $gray;
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
+    overflow: hidden;
+    max-height: 30rem;
 
     &--result {
       font-size: 5rem;
       color: $white;
       margin: 0rem;
       padding: 1rem 1rem;
+      min-height: 5.8rem;
     }
     &--operation {
       font-size: 1.4rem;
@@ -96,12 +101,20 @@ body {
       background-color: $white;
       background-color: lighten($gray, 10%);
     }
+    & button:active {
+      background-color: $white;
+      background-color: lighten($gray, 25%);
+    }
   }
   & .sign {
     background-color: $yellow;
   }
   & .sign:hover {
     background-color: $white;
-    background-color: darken($yellow, 5%);
+    background-color: lighten($yellow, 10%);
+  }
+  & .sign:active {
+    background-color: $white;
+    background-color: lighten($yellow, 25%);
   }
 }
