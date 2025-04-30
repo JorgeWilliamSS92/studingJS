@@ -1,5 +1,11 @@
+let bodyWidth = window.innerWidth / 10 - 8;
+let bodyHeight = window.innerHeight / 10 - 8;
+// const body = document.querySelector("body");
+// body.style.width = `${bodyWidth}rem`;
+// body.style.height = `${bodyHeight}rem`;
+
 const div = document.getElementById("div");
-const moveAmount = 1;
+const moveAmount = 2;
 let x = 0;
 let y = 0;
 
@@ -45,7 +51,22 @@ document.addEventListener("keydown", (event) => {
         x += moveAmount;
         break;
     }
-    div.style.left = `${x}rem`;
-    div.style.top = `${y}rem`;
+
+    if (x > bodyWidth) {
+      x = bodyWidth;
+    }
+    if (y > bodyHeight) {
+      y = bodyHeight;
+    }
+    if (x < 0) {
+      x = 0;
+    }
+    if (y < 0) {
+      y = 0;
+    }
+
+    div.style.transform = `translate(${x}rem, ${y}rem)`;
+    div.style.transform = `translate(${x}rem,${y}rem)`;
+    console.log(`x: ${x}, y: ${y}`);
   }
 });

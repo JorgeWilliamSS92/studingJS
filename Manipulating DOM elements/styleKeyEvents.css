@@ -3,24 +3,28 @@ html {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: #f1f1f1;
   height: 100dvh;
+  font-size: 62.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body {
   margin: 1rem;
   padding: 0;
-  height: 95%;
-  width: 96%;
+  width: 99%;
+  height: 98%;
+  /* height: 35rem;
+  width: 35rem; */
   border: 0.5rem solid gray;
-
-  /* position: relative; */
 
   & #div {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(10, 129, 226);
-    font-size: 7.5rem;
-    width: 12rem;
-    height: 12rem;
+    font-size: 2.5rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     margin: 0.1rem;
     position: relative;
