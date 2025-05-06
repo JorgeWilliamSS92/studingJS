@@ -1,0 +1,21 @@
+//colors:
+
+$darkBlue: rgb(52, 115, 250);
+$lightBlue: rgb(93, 158, 255);
+$redTomato: tomato;
+$green: rgb(6, 187, 6);
+$background: #f1f1f1;
+
+@mixin display(
+  $display: flex,
+  $flex: column,
+  $justify: center,
+  $align: center,
+  $gap: 1rem
+) {
+  display: $display;
+  flex-flow: $flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}

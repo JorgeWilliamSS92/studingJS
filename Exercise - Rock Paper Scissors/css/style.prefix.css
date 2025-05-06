@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 62.5%;
+  background-color: #f1f1f1;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-top: 2rem;
+}
+
+#selection {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#selection p {
+  height: -moz-max-content;
+  height: max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 8rem;
+  background-color: rgb(52, 115, 250);
+  border-radius: 50%;
+  padding: 1.5rem;
+  border: 0.25rem solid black;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+#selection p:hover {
+  background-color: rgb(93, 158, 255);
+}
+
+#choose {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 40%;
+}
+#choose div {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+#choose p {
+  font-size: 3rem;
+}
+#choose #player,
+#choose #computer {
+  min-width: 30%;
+  text-align: left;
+}
+#choose #choosedP,
+#choose #choosedC {
+  width: 10%;
+  text-align: left;
+}
+
+h2 {
+  font-size: 6rem;
+  color: rgb(52, 115, 250);
+}
+
+#score {
+  font-size: 3rem;
+  text-align: center;
+}
+#score #playerScore span {
+  color: rgb(6, 187, 6);
+}
+#score #computerScore span {
+  color: tomato;
+}
+
+#score {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 40%;
+}
+#score div {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+#score p {
+  font-size: 3rem;
+}
+#score #playerScore,
+#score #computerScore {
+  min-width: 35%;
+  text-align: left;
+}
+#score #playerTotal,
+#score #computerTotal {
+  width: 5%;
+  text-align: left;
+}
+#score #playerTotal {
+  color: rgb(6, 187, 6);
+}
+#score #computerTotal {
+  color: tomato;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Njc3MvbWFpbi5zY3NzIiwic3R5bGUuY29tcC5jc3MiLCIuLi9zY3NzL2hlbHBlcnMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNFLFNBQUE7RUFDQSxVQUFBO0VBQ0Esc0JBQUE7QUNERjs7QURHQTtFQUNFLHNIQUFBO0VBRUEsZ0JBQUE7RUFDQSx5QkVMVztBREliOztBRElBO0VFQ0UsYUFOVTtFQU9WLGlCQU5PO0VBT1AsdUJBTlU7RUFPVixtQkFOUTtFQU9SLFNGSnVCO0FDR3pCOztBREFBO0VBQ0UsZUFBQTtFQUNBLGdCQUFBO0FDR0Y7O0FEREE7RUVQRSxhQU5VO0VBT1YsY0ZPd0I7RUVOeEIsdUJBTlU7RUFPVixtQkFOUTtFQU9SLFNBTk07QURrQlI7QURORTtFQUNFLHdCQUFBO0VBQUEsbUJBQUE7RUFDQSx1QkFBQTtFQUFBLGtCQUFBO0VBQ0EsZUFBQTtFQUNBLG1DRTNCTztFRjRCUCxrQkFBQTtFQUNBLGVBQUE7RUFDQSwyQkFBQTtFQUNBLDZDQUFBO0VBQ0EsZUFBQTtBQ1FKO0FETEU7RUFDRSxtQ0VuQ1E7QUQwQ1o7O0FESEE7RUUzQkUsYUFOVTtFQU9WLGlCQU5PO0VBT1AsdUJBTlU7RUFPVixtQkFOUTtFQU9SLFdGd0J1QjtFQUN2QixVQUFBO0FDVUY7QURSRTtFRS9CQSxhQU5VO0VBT1YsY0YrQjBCO0VFOUIxQix1QkFOVTtFQU9WLG1CQU5RO0VBT1IsU0FOTTtFRm1DSixXQUFBO0FDY0o7QURYRTtFQUNFLGVBQUE7QUNhSjtBRFZFOztFQUVFLGNBQUE7RUFDQSxnQkFBQTtBQ1lKO0FEVkU7O0VBRUUsVUFBQTtFQUNBLGdCQUFBO0FDWUo7O0FEUkE7RUFDRSxlQUFBO0VBQ0Esd0JFbkVTO0FEOEVYOztBRFJBO0VBQ0UsZUFBQTtFQUNBLGtCQUFBO0FDV0Y7QURUSTtFQUNFLHFCRXhFRTtBRG1GUjtBRE5JO0VBQ0UsYUUvRU07QUR1Rlo7O0FESEE7RUV6RUUsYUFOVTtFQU9WLGlCQU5PO0VBT1AsdUJBTlU7RUFPVixtQkFOUTtFQU9SLFdGc0V1QjtFQUN2QixVQUFBO0FDVUY7QURSRTtFRTdFQSxhQU5VO0VBT1YsY0Y2RTBCO0VFNUUxQix1QkFOVTtFQU9WLG1CQU5RO0VBT1IsU0FOTTtFRmlGSixXQUFBO0FDY0o7QURYRTtFQUNFLGVBQUE7QUNhSjtBRFZFOztFQUVFLGNBQUE7RUFDQSxnQkFBQTtBQ1lKO0FEVkU7O0VBRUUsU0FBQTtFQUNBLGdCQUFBO0FDWUo7QURWRTtFQUNFLHFCRTNHSTtBRHVIUjtBRFZFO0VBQ0UsYUUvR1E7QUQySFoiLCJmaWxlIjoic3R5bGUucHJlZml4LmNzcyJ9 */
