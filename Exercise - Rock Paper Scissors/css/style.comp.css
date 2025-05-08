@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 62.5%;
   background-color: #f1f1f1;
 }
@@ -51,7 +51,7 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  width: 40%;
+  width: 28rem;
 }
 #choose div {
   display: flex;
@@ -61,18 +61,17 @@ h1 {
   gap: 1rem;
   width: 100%;
 }
-#choose p {
-  font-size: 3rem;
-}
 #choose #player,
 #choose #computer {
-  min-width: 30%;
+  min-width: 20rem;
   text-align: left;
+  font-size: 3rem;
 }
-#choose #choosedP,
-#choose #choosedC {
-  width: 10%;
+#choose #chooseP,
+#choose #chooseC {
+  width: 8rem;
   text-align: left;
+  font-size: 3rem;
 }
 
 h2 {
@@ -125,6 +124,81 @@ h2 {
 }
 #score #computerTotal {
   color: tomato;
+}
+
+@media (max-width: 706px) {
+  html {
+    font-size: 50%;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  #selection p {
+    font-size: 6rem;
+  }
+  #score {
+    width: 60%;
+  }
+  #choose div {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  #choose #player,
+  #choose #computer {
+    min-width: auto;
+    text-align: center;
+    font-size: 3rem;
+  }
+  #choose #chooseP,
+  #choose #chooseC {
+    width: auto;
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 45%;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  #selection p {
+    font-size: 5rem;
+  }
+  #score {
+    width: 80%;
+  }
+  #choose div {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  #choose #player,
+  #choose #computer {
+    min-width: auto;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  #choose #chooseP,
+  #choose #chooseC {
+    width: auto;
+    text-align: center;
+    font-size: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.comp.css.map */

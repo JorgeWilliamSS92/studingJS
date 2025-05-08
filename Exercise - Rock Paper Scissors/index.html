@@ -9,18 +9,18 @@
   <body>
     <h1>Rock - Paper - Scissors</h1>
     <div id="selection">
-      <p id="rock">👊</p>
-      <p id="paper">✋</p>
-      <p id="scissors">✌</p>
+      <p id="rock" onclick="selected('Rock')">👊</p>
+      <p id="paper" onclick="selected('Paper')">✋</p>
+      <p id="scissors" onclick="selected('Scissors')">✌</p>
     </div>
     <div id="choose">
-      <div>
+      <div id="playerChoose">
         <p id="player">Player:</p>
-        <p id="choosedP">Rock</p>
+        <p id="chooseP"></p>
       </div>
-      <div>
+      <div id="computerChoose">
         <p id="computer">Computer:</p>
-        <p id="choosedC">Paper</p>
+        <p id="chooseC"></p>
       </div>
     </div>
     <h2 id="result">Waiting...</h2>
