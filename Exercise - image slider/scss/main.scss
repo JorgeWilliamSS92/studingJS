@@ -1,0 +1,56 @@
+$background: #dddddd;
+$button-color: #000000;
+$button-hover: #1a1919;
+
+@mixin display(
+  $display: flex,
+  $flex-direction: row,
+  $justify-content: center,
+  $align-items: center,
+  $gap: 0.5rem
+) {
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: $background;
+}
+
+body {
+  @include display();
+  height: 100vh;
+}
+.container {
+  @include display();
+  height: 30%;
+  width: 30%;
+
+  &__img {
+    width: 100%;
+    border-radius: 2rem;
+  }
+  &__left,
+  &__right {
+    background-color: $button-color;
+    color: white;
+    border: none;
+    padding: 1rem 0.3rem;
+    border-radius: 0.5rem;
+    font-size: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $button-hover;
+      transform: scale(1.1);
+    }
+  }
+}
