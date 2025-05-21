@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Mauricio",
+    "age": 35,
+    "email": "",
+    "address": {
+      "street": "Rua das Flores",
+      "number": 123,
+      "city": "São Paulo",
+      "state": "SP"
+    },
+    "phoneNumbers": [
+      {
+        "type": "home",
+        "number": "1234-5678"
+      },
+      {
+        "type": "work",
+        "number": "9876-5432"
+      }
+    ],
+    "isActive": true,
+    "hobbies": ["reading", "traveling", "cooking"],
+    "birthDate": "1988-05-15"
+  },
+  {
+    "name": "Marcos",
+    "age": 28,
+    "email": "",
+    "address": {
+      "street": "Rua das Flores",
+      "number": 123,
+      "city": "São Paulo",
+      "state": "SP"
+    },
+    "phoneNumbers": [
+      {
+        "type": "home",
+        "number": "1234-5678"
+      },
+      {
+        "type": "work",
+        "number": "9876-5432"
+      }
+    ],
+    "isActive": true,
+    "hobbies": ["reading", "traveling", "cooking"],
+    "birthDate": "1988-05-15"
+  },
+  {
+    "name": "Fernanda",
+    "age": 30,
+    "email": "",
+    "address": {
+      "street": "Rua das Flores",
+      "number": 123,
+      "city": "São Paulo",
+      "state": "SP"
+    },
+    "phoneNumbers": [
+      {
+        "type": "home",
+        "number": "1234-5678"
+      },
+      {
+        "type": "work",
+        "number": "9876-5432"
+      }
+    ],
+    "isActive": true,
+    "hobbies": ["reading", "traveling", "cooking"],
+    "birthDate": "1988-05-15"
+  },
+  {
+    "name": "Gilmar",
+    "age": 40,
+    "email": "",
+    "address": {
+      "street": "Rua das Flores",
+      "number": 123,
+      "city": "São Paulo",
+      "state": "SP"
+    },
+    "phoneNumbers": [
+      {
+        "type": "home",
+        "number": "1234-5678"
+      },
+      {
+        "type": "work",
+        "number": "9876-5432"
+      }
+    ],
+    "isActive": true,
+    "hobbies": ["reading", "traveling", "cooking"],
+    "birthDate": "1988-05-15"
+  },
+  {
+    "name": "Julia",
+    "age": 25,
+    "email": "",
+    "address": {
+      "street": "Rua das Flores",
+      "number": 123,
+      "city": "São Paulo",
+      "state": "SP"
+    },
+    "phoneNumbers": [
+      {
+        "type": "home",
+        "number": "1234-5678"
+      },
+      {
+        "type": "work",
+        "number": "9876-5432"
+      }
+    ],
+    "isActive": true,
+    "hobbies": ["reading", "traveling", "cooking"],
+    "birthDate": "1988-05-15"
+  }
+]
